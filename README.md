@@ -3,7 +3,7 @@
 > **Adaptive Wireless Charging Road for Electric Vehicles**  
 > *Powering the Future Without Wires.*
 
-[![GitHub Pages](https://img.shields.io/badge/deployment-GitHub%20Pages-69e7ed?style=flat-square)](https://scooterxd69.github.io/Science-Project/) [![License: MIT](https://img.shields.io/badge/license-MIT-5b86ff?style=flat-square)](LICENSE) [![Prototype](https://img.shields.io/badge/status-research%20prototype-ffad69?style=flat-square)](#research-notes)
+[![GitHub Pages](https://img.shields.io/badge/deployment-GitHub%20Pages-69e7ed?style=flat-square)](https://scooterxd69.github.io/Science-Project/) [![Prototype](https://img.shields.io/badge/status-research%20prototype-ffad69?style=flat-square)](#research-notes)
 
 <p align="center"><img src="diagrams/architecture.svg" alt="AWCR system architecture showing supply, controller, coil array and vehicle receiver" width="860"></p>
 
@@ -90,7 +90,3 @@ Contributions are welcome—please read [CONTRIBUTING.md](CONTRIBUTING.md), [COD
 ## Team
 
 Naitik Singh · Shreyansh Tiwari · Shivam Rai · Ayan Ahmed · Suraj Kumar · Aditya Dwivedi
-
-## License
-
-Distributed under the [MIT License](LICENSE). © 2026 AWCR team.
