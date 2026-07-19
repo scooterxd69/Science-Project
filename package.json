@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "Interactive research showcase for dynamic wireless EV charging.",
-  "scripts": { "start": "npx serve .", "check": "node scripts/check-site.mjs" },
+  "scripts": { "start": "npx serve .", "check": "node scripts/check-site.mjs", "debug": "node scripts/debug-site.mjs" },
   "license": "MIT"
 }
