@@ -41,7 +41,9 @@ function updateDemo() {
   const activeZone = Math.min(4, Math.floor(value / 25) + 1);
   const isActive = value > 4 && value < 96;
   const percent = Math.round(56 + value * 0.25);
-  car.style.left = `${10 + value * 0.72}%`;
+  // Transform-based motion avoids layout rounding inside the perspective road.
+  // The slider and direct vehicle drag both use this single update path.
+  car.style.transform = `translateX(${value * 4.85}%)`;
   coils.forEach((coil, index) => coil.classList.toggle('active', isActive && index === activeZone - 1));
   field.classList.toggle('active', isActive);
   pos.value = `${value}%`;
@@ -54,6 +56,30 @@ function updateDemo() {
 }
 control.addEventListener('input', updateDemo);
 updateDemo();
+
+let isDraggingVehicle = false;
+const road = $('.demo-road');
+
+function moveVehicleToPointer(clientX) {
+  const bounds = road.getBoundingClientRect();
+  const relativePosition = Math.max(0, Math.min(1, (clientX - bounds.left) / bounds.width));
+  control.value = String(Math.round(relativePosition * 100));
+  updateDemo();
+}
+
+car.addEventListener('pointerdown', (event) => {
+  isDraggingVehicle = true;
+  car.setPointerCapture(event.pointerId);
+  event.preventDefault();
+  moveVehicleToPointer(event.clientX);
+});
+
+car.addEventListener('pointermove', (event) => {
+  if (isDraggingVehicle) moveVehicleToPointer(event.clientX);
+});
+
+car.addEventListener('pointerup', () => { isDraggingVehicle = false; });
+car.addEventListener('pointercancel', () => { isDraggingVehicle = false; });
 
 $('#zoom-blueprint').addEventListener('click', () => $('#blueprint-viewer').classList.toggle('zoomed'));
 $('#toggle-blueprint').addEventListener('click', () => $('#blueprint-viewer').classList.toggle('high-contrast'));
