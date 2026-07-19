@@ -1,0 +1,8 @@
+{
+  "name": "adaptive-wireless-charging-road",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive research showcase for dynamic wireless EV charging.",
+  "scripts": { "start": "npx serve .", "check": "node scripts/check-site.mjs" },
+  "license": "MIT"
+}
