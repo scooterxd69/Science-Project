@@ -84,6 +84,7 @@ car.addEventListener('pointercancel', () => { isDraggingVehicle = false; });
 $('#zoom-blueprint').addEventListener('click', () => $('#blueprint-viewer').classList.toggle('zoomed'));
 $('#toggle-blueprint').addEventListener('click', () => $('#blueprint-viewer').classList.toggle('high-contrast'));
 document.querySelectorAll('.hotspot').forEach((button, index) => button.addEventListener('click', () => alert(index ? 'Receiver plate: aligns with the local field above the road surface.' : 'Transmitter coil: localised planar winding for a single road zone.')));
+<<<<<<< HEAD
 
 // After ten seconds without input, the fullscreen exhibit display provides a
 // short, title-led explanation for visitors viewing the model from a distance.
@@ -152,3 +153,5 @@ document.addEventListener('visibilitychange', () => {
   else resetIdleTimer();
 });
 resetIdleTimer();
+=======
+>>>>>>> 3dce786c4ad111227bf59759111f2b9bf8590176

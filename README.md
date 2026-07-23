@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # ∿ AVCR LAB
 
 > **Adaptive EV Charging Road Wireless**  
+=======
+# ∿ AWCR LAB
+
+> **Adaptive Wireless Charging Road for Electric Vehicles**  
+>>>>>>> 3dce786c4ad111227bf59759111f2b9bf8590176
 > *Powering the Future Without Wires.*
 
 [![GitHub Pages](https://img.shields.io/badge/deployment-GitHub%20Pages-69e7ed?style=flat-square)](https://scooterxd69.github.io/Science-Project/) [![Prototype](https://img.shields.io/badge/status-research%20prototype-ffad69?style=flat-square)](#research-notes)
@@ -89,4 +95,8 @@ Contributions are welcome—please read [CONTRIBUTING.md](CONTRIBUTING.md), [COD
 
 ## Team
 
+<<<<<<< HEAD
 Naitik Singh · Shreyansh Tiwari · Shivam Rai · Kushagra Tiwari · Ayan Ahmed · Suraj Kumar · Aditya Dwivedi
+=======
+Naitik Singh · Shreyansh Tiwari · Shivam Rai · Ayan Ahmed · Suraj Kumar · Aditya Dwivedi
+>>>>>>> 3dce786c4ad111227bf59759111f2b9bf8590176
