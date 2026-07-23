@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Adaptive Wireless Charging Road — an interactive engineering research prototype for dynamic EV charging.">
+  <title>AVCR — Adaptive Wireless Charging Road</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/exhibit-mode.css">
+  <link rel="stylesheet" href="src/css/exhibit-blueprint.css">
+  <style>.demo-ev{left:10%;transition:transform .18s var(--ease);will-change:transform;cursor:grab;touch-action:none}.demo-ev:active{cursor:grabbing}.hero-contributors{max-width:600px;margin:26px 0 0;padding-top:17px;border-top:1px solid var(--line);font:10px/1.8 DM Mono;color:var(--muted);letter-spacing:.025em}.hero-contributors span{display:block;color:var(--cyan);font-size:9px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:4px}@media(max-width:850px){.hero-contributors{margin-inline:auto;text-align:center}}</style>
+  <script type="module" src="src/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="AVCR home"><span class="brand-mark">∿</span><span>AVCR<small>LAB</small></span></a>
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><i></i><i></i></button>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="#technology">Technology</a><a href="#demonstrator">Demonstrator</a><a href="#research">Research</a><a href="#team">Team</a><a class="nav-action" href="#contact">Collaborate <span>↗</span></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-aura" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> A research prototype / 2026</p>
+        <h1>Power is no longer a <em>destination.</em></h1>
+        <p class="lede">An adaptive road surface that transfers energy to electric vehicles in motion—only when and where it is needed.</p>
+        <div class="hero-actions"><a class="button primary" href="#demonstrator">Explore the road <span>↓</span></a><a class="button quiet" href="#architecture">System architecture</a></div>
+        <dl class="hero-metrics"><div><dt>85%</dt><dd>prototype efficiency</dd></div><div><dt>4</dt><dd>independent zones</dd></div><div><dt>&lt;80 ms</dt><dd>activation target</dd></div></dl>
+        <p class="hero-contributors"><span>Contributors</span> Naitik Singh · Shreyansh Tiwari · Kushagra Tiwari · Shivam Rai · Ayan Ahmed · Suraj Kumar · Aditya Dwivedi · Kushagra Tiwari</p>
+      </div>
+      <div class="hero-model" aria-label="Animated illustration of an electric vehicle travelling over charging coils">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="model-label one">FIELD<br><b>ACTIVE</b></div><div class="model-label two">POWER<br><b>TRANSFER</b></div>
+        <div class="road-perspective"><div class="lane"></div><div class="hero-coils"><i></i><i></i><i></i><i></i></div><div class="ev"><span class="glass-roof"></span><span class="light"></span><span class="wheel left"></span><span class="wheel right"></span></div></div>
+      </div>
+      <a class="scroll-cue" href="#technology">Scroll to investigate <span></span></a>
+    </section>
+
+    <section class="section intro" id="technology">
+      <div class="section-heading"><p class="eyebrow"><span></span> The proposition</p><h2>Charge while moving.<br><em>Use energy with intent.</em></h2></div>
+      <div class="intro-copy"><p>Static charging asks drivers to stop. Our modular demonstrator explores a different model: a road that identifies a vehicle, wakes a local inductive zone, and transfers energy through a controlled magnetic field.</p><a class="text-link" href="#research">Read the scientific principle <span>→</span></a></div>
+      <div class="feature-grid">
+        <article><span class="feature-index">01</span><h3>Selective activation</h3><p>Infrared sensing ensures that only the zone beneath a detected vehicle is energised.</p></article>
+        <article><span class="feature-index">02</span><h3>Contactless transfer</h3><p>Aligned transmitter and receiver coils exchange energy without exposed connectors.</p></article>
+        <article><span class="feature-index">03</span><h3>Measured feedback</h3><p>A live readout makes power state, efficiency, and system health legible.</p></article>
+      </div>
+    </section>
+
+    <section class="section architecture" id="architecture">
+      <div class="section-heading"><p class="eyebrow"><span></span> System architecture</p><h2>Every watt has a path.</h2></div>
+      <div class="architecture-card">
+        <div class="architecture-flow" role="img" aria-label="Power flows from supply to controller, coil array, vehicle receiver, and battery management system">
+          <div class="flow-node"><b>01</b><span>DC supply</span></div><i></i><div class="flow-node"><b>02</b><span>Zone controller</span></div><i></i><div class="flow-node glow"><b>03</b><span>Inductive array</span></div><i></i><div class="flow-node"><b>04</b><span>EV receiver</span></div><i></i><div class="flow-node"><b>05</b><span>Battery manager</span></div>
+        </div>
+        <div class="architecture-footer"><p>Each zone is electrically independent, so the road can make a precise decision before it transmits.</p><span class="status-dot">SYSTEM NOMINAL</span></div>
+      </div>
+    </section>
+
+    <section class="section demonstrator" id="demonstrator">
+      <div class="section-heading"><p class="eyebrow"><span></span> Interactive demonstrator</p><h2>Drive the model.<br><em>Watch the road respond.</em></h2><p>Use the slider or arrow keys to position the EV. The active road segment, field strength, and vehicle battery update in real time.</p></div>
+      <div class="demo-shell">
+        <div class="demo-topbar"><span class="live"><i></i> Live prototype</span><span id="zone-readout">Zone 01 / standby</span></div>
+        <div class="demo-stage" id="demo-stage">
+          <div class="demo-sky"></div><div class="demo-horizon"></div>
+          <div class="demo-road"><div class="demo-lane"></div><div class="demo-coil-row" aria-hidden="true"><i data-zone="1"></i><i data-zone="2"></i><i data-zone="3"></i><i data-zone="4"></i></div><div class="field-lines" aria-hidden="true"><i></i><i></i><i></i></div><div class="demo-ev" id="demo-ev"><span class="demo-cabin"></span><span class="demo-lamp"></span><b></b><b></b></div></div>
+          <div class="demo-legend"><span><i class="legend-cyan"></i> energised zone</span><span><i></i> standby zone</span></div>
+        </div>
+        <div class="demo-controls"><label for="road-control">EV position <output id="position-output">25%</output></label><input id="road-control" type="range" min="0" max="100" value="25" aria-describedby="road-help"><p id="road-help">Move through each quarter of the road to energise that coil array.</p></div>
+        <div class="telemetry"><div><span>Battery state</span><strong id="battery-output">64%</strong><div class="meter"><i id="battery-meter"></i></div></div><div><span>Transfer efficiency</span><strong id="efficiency-output">—</strong><small>coupling estimate</small></div><div><span>Power flow</span><strong id="power-output">0 W</strong><small>receiver output</small></div><div><span>Detection</span><strong id="detection-output">Idle</strong><small>IR sensor status</small></div></div>
+      </div>
+    </section>
+
+    <section class="section blueprint" id="blueprints">
+      <div class="section-heading"><p class="eyebrow"><span></span> Engineering drawing set</p><h2>Make the invisible<br><em>inspectable.</em></h2></div>
+      <div class="blueprint-layout"><div class="blueprint-viewer" id="blueprint-viewer" tabindex="0" aria-label="Interactive coil array blueprint. Use buttons to change view."><div class="blueprint-gridlines"></div><svg viewBox="0 0 800 500" role="img" aria-labelledby="blueprint-title"><title id="blueprint-title">Wireless charging road coil array</title><g fill="none" stroke="currentColor"><path d="M70 360h660M70 390h660M70 420h660" opacity=".28"/><path d="M138 150h524v204H138z" stroke-width="2"/><path d="M180 245h440" stroke-dasharray="7 9" opacity=".65"/><ellipse cx="400" cy="298" rx="162" ry="39" stroke="#69e7ed" stroke-width="3"/><ellipse cx="400" cy="298" rx="110" ry="26" stroke="#5b86ff" stroke-width="3"/><path d="M267 280q133-106 266 0M292 265q108-78 216 0" stroke="#69e7ed" opacity=".7"/><rect x="350" y="156" width="100" height="40" rx="5" fill="#dff9ff" opacity=".9"/><path d="M198 131v-38h405v38M181 330v68M619 330v68" stroke-width="1.4"/><path d="M198 112h405M181 382h438" stroke-dasharray="4 5" opacity=".6"/></g><g fill="currentColor" font-family="DM Mono, monospace" font-size="13"><text x="332" y="79">ROAD MODULE / 1200 mm</text><text x="145" y="420">ROAD BED / 80 mm</text><text x="467" y="285">TX COIL</text><text x="468" y="175">EV RX PLATE</text><text x="253" y="245">MAGNETIC FLUX</text></g></svg><button class="hotspot hotspot-one" aria-label="Show coil annotation">1</button><button class="hotspot hotspot-two" aria-label="Show receiver annotation">2</button></div><aside class="drawing-panel"><p class="drawing-file">DRW-03 / REV A</p><h3>Coil array cross-section</h3><p>Nested litz-wire coils sit below an insulated road surface. The receiver plate hovers above the optimal coupling region.</p><dl><div><dt>Module pitch</dt><dd>300 mm</dd></div><div><dt>Nominal air gap</dt><dd>35 mm</dd></div><div><dt>Control mode</dt><dd>Local switch</dd></div></dl><div class="drawing-actions"><button class="button quiet" id="zoom-blueprint">Zoom drawing</button><button class="icon-button" id="toggle-blueprint" aria-label="Toggle blueprint contrast">◐</button></div></aside></div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="research-header"><p class="eyebrow"><span></span> Research notes</p><h2>Physics, translated<br>into motion.</h2><p>Our prototype turns established electromagnetic principles into a tangible, inspectable experience.</p></div>
+      <div class="research-list">
+        <details open><summary><span>01</span><strong>Electromagnetic induction</strong><i>+</i></summary><p>A changing current in the transmitter coil creates a changing magnetic field. When that field passes through a nearby receiver coil, it induces an electromotive force.</p></details>
+        <details><summary><span>02</span><strong>Mutual inductance</strong><i>+</i></summary><p>Coupling depends on coil geometry, alignment, separation, and the magnetic pathway. The demonstrator visualises this relationship as a local, activated field.</p></details>
+        <details><summary><span>03</span><strong>Resonant power transfer</strong><i>+</i></summary><p>Resonant circuits can improve energy exchange when transmitter and receiver are tuned to a shared operating frequency.</p></details>
+        <details><summary><span>04</span><strong>Dynamic road charging</strong><i>+</i></summary><p>Segmented infrastructure limits active power to the immediate vehicle position, supporting safety, efficiency, and scalable control.</p></details>
+      </div>
+      <a class="button quiet research-button" href="https://github.com/scooterxd69/Science-Project/blob/main/research/reading-list.md">Open research reading list <span>↗</span></a>
+    </section>
+
+    <section class="section components" id="components"><div class="section-heading"><p class="eyebrow"><span></span> Hardware index</p><h2>Designed as a system.</h2></div><div class="component-grid" id="component-grid"></div></section>
+
+    <section class="section applications"><div class="application-card"><p class="eyebrow"><span></span> Beyond the prototype</p><h2>A road that understands<br>where energy belongs.</h2><div class="application-tags"><span>Transit depots</span><span>Campus shuttles</span><span>Logistics lanes</span><span>Fleet corridors</span></div><p>Dynamic infrastructure could supplement stationary charging for predictable routes and high-utilisation vehicles.</p></div></section>
+
+    <section class="section team" id="team"><div class="section-heading"><p class="eyebrow"><span></span> The people behind AVCR</p><h2>Curiosity is our<br><em>core component.</em></h2></div><div class="team-grid" id="team-grid"></div></section>
+
+    <section class="contact section" id="contact"><p class="eyebrow"><span></span> Research collaboration</p><h2>Let’s engineer<br>the next mile.</h2><a class="contact-link" href="mailto:https://scooterxd69.github.io/Science-Project/ <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">∿</span><span>AVCR<small>LAB</small></span></a><p>Adaptive Wireless Charging Road / Engineering prototype</p><p>© 2026 AVCR team.</p><a href="https://github.com/scooterxd69/Science-Project">GitHub ↗</a></footer>
+  <section class="exhibit-mode" id="exhibit-mode" aria-hidden="true" aria-label="Autonomous exhibition display">
+    <div class="exhibit-grid" aria-hidden="true"></div>
+    <div class="exhibit-hud exhibit-hud-top"><span class="exhibit-brand">AVCR LAB</span><span class="exhibit-status"><i></i> EXHIBIT MODE</span></div>
+    <div class="exhibit-content">
+      <p class="exhibit-kicker" id="exhibit-kicker">A CLASS XII ENGINEERING PROTOTYPE</p>
+      <h2 id="exhibit-title">Adaptive Wireless<br><em>Charging Road</em></h2>
+      <p class="exhibit-copy" id="exhibit-copy">Powering electric vehicles through the road, while they move.</p>
+      <p class="exhibit-team" id="exhibit-team" hidden></p>
+    </div>
+    <div class="exhibit-road" aria-hidden="true">
+      <div class="exhibit-lane"></div>
+      <div class="exhibit-coils"><i></i><i></i><i></i><i></i></div>
+      <div class="exhibit-field"><b></b><b></b><b></b></div>
+      <div class="exhibit-ev"><span></span><b></b><b></b></div>
+      <div class="exhibit-blueprint" aria-hidden="true"><span>ROAD MODULE / 1200 mm</span><i></i><i></i><i></i><b>TX COIL ARRAY</b><em>EV RX PLATE</em></div>
+    </div>
+    <div class="exhibit-hud exhibit-hud-bottom"><span id="exhibit-progress">01 / 04</span><span>MOVE OR TAP TO EXPLORE</span><span>10 SECOND LOOP</span></div>
+  </section>
+</body>
+</html>
