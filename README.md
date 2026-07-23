@@ -1,4 +1,4 @@
-# ∿ AWCR LAB
+# ∿ AVCR LAB
 
 > **Adaptive Wireless Charging Road for Electric Vehicles**  
 > *Powering the Future Without Wires.*
