@@ -1,6 +1,6 @@
 # ∿ AVCR LAB
 
-> **Adaptive Wireless Charging Road for Electric Vehicles**  
+> **Adaptive EV Charging Road Wireless**  
 > *Powering the Future Without Wires.*
 
 [![GitHub Pages](https://img.shields.io/badge/deployment-GitHub%20Pages-69e7ed?style=flat-square)](https://scooterxd69.github.io/Science-Project/) [![Prototype](https://img.shields.io/badge/status-research%20prototype-ffad69?style=flat-square)](#research-notes)
