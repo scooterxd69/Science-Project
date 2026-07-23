@@ -89,4 +89,4 @@ Contributions are welcome—please read [CONTRIBUTING.md](CONTRIBUTING.md), [COD
 
 ## Team
 
-Naitik Singh · Shreyansh Tiwari · Shivam Rai · Ayan Ahmed · Suraj Kumar · Aditya Dwivedi
+Naitik Singh · Shreyansh Tiwari · Shivam Rai · Kushagra Tiwari · Ayan Ahmed · Suraj Kumar · Aditya Dwivedi
